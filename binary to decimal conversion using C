@@ -1,0 +1,49 @@
+#include<stdio.h>
+//   printf("WELCOME TO BINARY TO DECIMAL COVERSION SYSTEM\N");
+
+void main()
+{  
+     printf("WELCOME TO BINARY TO DECIMAL COVERSION SYSTEM\n");int sum=0;
+    int i=0;
+    int Num,flag=0;
+    printf("Enter the Number in binary\n");
+    scanf("%d",&Num);
+    
+   int  S=Num;
+   
+while(S!=0)///  to give the lenght of binary code
+{
+    int P=S%10;
+ 
+    S/=10;
+    i++;
+}
+
+ int y=Num;
+for(int j=0;j<i;j++)
+{
+    int P=y%10;
+     y/=10;
+     if(j==0)
+{   
+    sum=P*1;
+}
+else{
+    int poww()// output for power//
+{ int l=1;
+    for(int k=1;k<=j;k++)
+    {
+         l=2*l;
+    }
+    return l;
+}
+      sum=P*poww()+sum;
+}
+  
+    
+}
+
+printf("%d The given Decimal number of %d binary code",sum,Num);
+
+
+}
